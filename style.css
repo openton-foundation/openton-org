@@ -1,0 +1,167 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #111111;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+h3, h4, h5, h6 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+h1 {
+    background: url("./assets/openton_logo_full.svg") no-repeat 0 2px transparent;
+    background-size: auto 20px;
+    line-height: 19px;
+    height: 25px;
+    padding-left: 35px;
+    font-size: 24px;
+    color: #111111;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.join-btn .btn {
+    font-size: 16px;
+    margin-top: 14px;
+    margin-bottom: 50px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+h2 {
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+strong, b {
+    font-weight: 600;
+}
+section article:last-child {
+    min-height: calc(100vh - 80px);
+}
+.h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+.mover {
+    transition: top 0.3s ease-in-out;
+    position: fixed;
+    max-width: 220px;
+}
+.moverCont {
+    position: relative;
+    max-width: 235px;
+}
+a {
+    color: #238FE1;
+}
+button {
+    outline: none !important;
+}
+.nav-link {
+    padding: 8px 0 8px 0;
+    border-top: 0.5px solid  rgba(35, 143, 225, 0.5);
+    width: 100%;
+}
+nav.nav {
+    width: 100%;
+}
+.nav .nav-link:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+.nav-link.active {
+    color: #111111;
+}
+.navbar-toggler {
+    border: none;
+    margin-top: -18px;
+    padding-right: 0;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23212529' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar {
+    padding: 0 0 10px 0;
+}
+.container {
+    max-width: 960px;
+    padding-top: 30px;
+}
+.btn {
+    border-radius: 3px;
+}
+.btn-primary {
+    border-color: #238FE1;
+    font-weight: 400;
+    background: #238FE1;
+}
+.btn-primary:hover {
+    color: #fff;
+    background: #2184ce;
+}
+.btn-lang {
+    outline: none!important;
+    box-shadow: none!important;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0;
+}
+.lang .dropdown-item {
+    font-weight: 300;
+    font-size: 1rem;
+}
+.lang img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.btn-lang img {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        margin-top: 0;
+    }
+    section {
+        margin-bottom: 80px;
+    }
+    .container {
+        padding-top: 90px;
+    }
+    .navbar {
+        padding: 20px 20px 0 20px;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 3px 0 #212529;
+    }
+    .navbar nav {
+        margin-bottom: 10px;
+    }
+    .mover {
+        position: relative;
+    }
+    .join-btn {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 10;
+        left: 0;
+    }
+    .join-btn .btn {
+        max-width: 270px;
+        margin: 0 auto;
+        display: block !important;
+    }
+}
