@@ -16,7 +16,13 @@ $(function () {
         }
     });
 
-    liveCounter();
+    $('a.lang-link').click(function(){
+        var date = new Date(new Date().getTime() + 60*60*24 * 1000);
+        document.cookie = "language=true; path=/; expires=" + date.toUTCString();
+        return true;
+    });
+
+    //liveCounter();
 });
 
 function liveCounter () {
